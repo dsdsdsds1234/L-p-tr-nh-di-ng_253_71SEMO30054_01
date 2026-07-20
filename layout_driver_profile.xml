@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HỒ SƠ ĐỐI TÁC TÀI XẾ"
+        android:textColor="#00B14F"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/edtDriverProfileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Họ và tên tài xế"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/edtDriverProfilePhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số điện thoại / Email"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Trường bổ sung 1: Loại xe (Tên xe) -->
+    <EditText
+        android:id="@+id/edtDriverProfileVehicleName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Loại xe (Ví dụ: Toyota Camry, VinFast VF8)"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Trường bổ sung 2: Biển số xe -->
+    <EditText
+        android:id="@+id/edtDriverProfilePlate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Biển số xe (Ví dụ: 51G-123.45)"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Lựa chọn phân loại xe để khớp với loại cước khách đặt -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phân loại dịch vụ hoạt động:"
+        android:textColor="#757575"
+        android:textSize="14sp"
+        android:layout_marginBottom="4dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerDriverVehicleType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnDriverProfileSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00B14F"
+        android:text="CẬP NHẬT THÔNG TIN"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+</LinearLayout>

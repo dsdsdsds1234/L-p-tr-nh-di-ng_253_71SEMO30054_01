@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center_horizontal"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🎉 ĐẶT XE THÀNH CÔNG!"
+        android:textColor="#00B14F"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Khối hiển thị thông tin trả về từ MainActivity -->
+    <TextView
+        android:id="@+id/txtResultDriver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tài xế: Đang tải..."
+        android:textSize="18sp"
+        android:textColor="#212121"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/txtResultVehicle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phương tiện: Đang tải..."
+        android:textSize="16sp"
+        android:textColor="#616161"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/txtResultPlate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Biển số: Đang tải..."
+        android:textSize="16sp"
+        android:textColor="#616161"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:id="@+id/btnBackToMain"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="#00B14F"
+        android:text="Quay lại"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+</LinearLayout>
